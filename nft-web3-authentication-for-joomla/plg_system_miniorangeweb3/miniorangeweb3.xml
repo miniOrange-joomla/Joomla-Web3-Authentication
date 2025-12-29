@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_MINIORANGEWEB3</name>
+	<author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>www.miniorange.com</authorUrl>
+	<creationDate>May 2025</creationDate>
+	<copyright>Copyright 2023 miniOrange. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 3</license>
+	<version>3.3</version>
+	<files>
+		<filename plugin="miniorangeweb3">miniorangeweb3.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_miniorangeweb3.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_miniorangeweb3.sys.ini</language>
+	</languages>
+</extension>

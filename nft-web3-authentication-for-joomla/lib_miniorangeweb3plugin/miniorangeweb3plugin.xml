@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" version="3.0" method="upgrade">
+    <name>Library: miniOrange Web 3.0</name>
+    <libraryname>miniorangeweb3plugin</libraryname>
+    <author>miniOrange Security Software Pvt. Ltd.</author>
+	<authorEmail>info@xecurify.com</authorEmail>
+	<authorUrl>www.miniorange.com</authorUrl>
+    <creationDate>March 2023</creationDate>
+    <copyright>Copyright 2023 miniOrange. All Rights Reserved.</copyright>
+    <license>GNU General Public License version 3</license>
+    <version>3.3</version>
+    <description>LIB_MINIORANGEWEB3PLUGIN_XML_DESCRIPTION</description>
+    <files>
+	<filename>index.html</filename>
+        <folder>utility</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangeweb3plugin.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.lib_miniorangeweb3plugin.sys.ini</language>
+    </languages>
+</extension>

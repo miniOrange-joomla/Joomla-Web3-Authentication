@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_miniorange_web3</name>
+    <creationDate>March 2023</creationDate>
+    <copyright>2023 miniOrange</copyright>
+    <license>GNU General Public License version 3</license>
+    <author>miniOrange Security Software Pvt. Ltd.</author>
+    <authorEmail>info@xecurify.com</authorEmail>
+    <authorUrl>http://www.miniorange.com</authorUrl>
+    <version>3.3</version>
+    <description></description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <languages folder="languages/site">
+        <language tag="en-GB">en-GB/en-GB.com_miniorange_web3.ini</language>
+    </languages>
+    <administration>
+        <menu img="media/com_miniorange_web3/images/s_com_miniorange_saml.png" >COM_MINIORANGE_WEB3</menu>
+        <submenu>
+            <menu link="option=com_miniorange_web3&amp;tab=overview" view="accountsetup">COM_MINIORANGE_WEB3_OVERVIEW</menu>
+            <menu link="option=com_miniorange_web3&amp;tab=config_settings" view="accountsetup">COM_MINIORANGE_WEB3_SETTINGS</menu>
+            <menu link="option=com_miniorange_web3&amp;tab=contact_address_config" view="accountsetup">COM_MINIORANGE_WEB3_CONTRACT_ADDRESS_CONFIG</menu>
+            <menu link="option=com_miniorange_web3&amp;tab=content_restriction" view="accountsetup">COM_MINIORANGE_WEB3_NFT_CONTENT_RESTRICTION</menu>
+            <menu link="option=com_miniorange_web3&amp;tab=group_mapping" view="accountsetup">COM_MINIORANGE_WEB3_GROUP_MAPPING </menu>
+            <menu link="option=com_miniorange_web3&amp;tab=licensing" view="accountsetup">COM_MINIORANGE_WEB3_LICENSING </menu>
+
+        </submenu>
+        <files folder="administrator">        
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>miniorange_web3.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>        
+            <folder>sql</folder>            
+            <folder>views</folder>
+            <folder>web3</folder>
+        </files>
+        <languages folder="languages/administrator">
+            <language tag="en-GB">en-GB/en-GB.com_miniorange_web3.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_miniorange_web3.sys.ini</language>
+            <language tag="de-DE">de-DE/de-DE.com_miniorange_web3.ini</language>
+            <language tag="de-DE">de-DE/de-DE.com_miniorange_web3.sys.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.com_miniorange_web3.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.com_miniorange_web3.sys.ini</language>
+            <language tag="th-TH">th-TH/th-TH.com_miniorange_web3.ini</language>
+            <language tag="th-TH">th-TH/th-TH.com_miniorange_web3.sys.ini</language>
+            <language tag="it-IT">it-IT/it-IT.com_miniorange_web3.ini</language>
+            <language tag="it-IT">it-IT/it-IT.com_miniorange_web3.sys.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_miniorange_web3.ini</language>
+            <language tag="nl-NL">nl-NL/nl-NL.com_miniorange_web3.sys.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_miniorange_web3.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_miniorange_web3.sys.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.com_miniorange_web3.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.com_miniorange_web3.sys.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_miniorange_web3.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.com_miniorange_web3.sys.ini</language>
+            <language tag="da-DK">da-DK/da-DK.com_miniorange_web3.ini</language>
+            <language tag="da-DK">da-DK/da-DK.com_miniorange_web3.sys.ini</language>
+            <language tag="el-GR">el-GR/el-GR.com_miniorange_web3.ini</language>
+            <language tag="el-GR">el-GR/el-GR.com_miniorange_web3.sys.ini</language>
+            <language tag="hu-HU">hu-HU/hu-HU.com_miniorange_web3.ini</language>
+            <language tag="hu-HU">hu-HU/hu-HU.com_miniorange_web3.sys.ini</language>
+            <language tag="ja-JP">ja-JP/ja-JP.com_miniorange_web3.ini</language>
+            <language tag="ja-JP">ja-JP/ja-JP.com_miniorange_web3.sys.ini</language>
+            <language tag="pt-BR">pt-BR/pt-BR.com_miniorange_web3.ini</language>
+            <language tag="pt-BR">pt-BR/pt-BR.com_miniorange_web3.sys.ini</language>
+            <language tag="sv-SE">sv-SE/sv-SE.com_miniorange_web3.ini</language>
+            <language tag="sv-SE">sv-SE/sv-SE.com_miniorange_web3.sys.ini</language>
+            <language tag="sr-YU">sr-YU/sr-YU.com_miniorange_web3.ini</language>
+            <language tag="sr-YU">sr-YU/sr-YU.com_miniorange_web3.sys.ini</language>
+            <language tag="sr-RS">sr-RS/sr-RS.com_miniorange_web3.ini</language>
+            <language tag="sr-RS">sr-RS/sr-RS.com_miniorange_web3.sys.ini</language>
+
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="miniorange_web3"/>
+    </plugins>
+    <updateservers><server type="extension" priority="1" name="MiniorangeWeb3">https://miniorange.com/joomla_web3_plugin_update.xml</server></updateservers>
+</extension>
+
